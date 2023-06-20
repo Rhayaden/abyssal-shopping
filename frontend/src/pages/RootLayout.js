@@ -14,9 +14,7 @@ function Layout() {
   const { pathname, search } = useLocation();
   const params = useParams();
   const token = localStorage.getItem("token");
-
-  console.log(cartProducts);
-
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname, search]);
@@ -69,9 +67,7 @@ function Layout() {
         }
         return resData;
       };
-      if (cartProducts) {
         getCart();
-      }
     }
   }, [dispatch]);
 
