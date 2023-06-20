@@ -1,0 +1,102 @@
+.dropdown {
+  position: absolute;
+  height: 5.25rem;
+  top: 2rem;
+  z-index: 1;
+}
+.product-dropdown {
+  -webkit-transform: translate(-23.5%, 0);
+  -ms-transform: translate(-23.5%, 0);
+  transform: translate(-23.5%, 0);
+}
+.auth-dropdown,
+.user-dropdown {
+  -webkit-transform: translate(-33.5%, 0);
+  -ms-transform: translate(-33.5%, 0);
+  transform: translate(-33.5%, 0);
+}
+
+.welcome-user {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: white;
+  background: rgb(35, 1, 45);
+  color: white;
+}
+
+.welcome-user p:last-child {
+  color: rgb(89, 219, 219);
+  font-family: "Pacifico";
+}
+
+.dropdown ul {
+  position: relative;
+  list-style: none;
+  margin: 1.5rem 0;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+}
+
+.dropdown li {
+  margin: 0;
+  padding: 0.25rem 0.25rem;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  background: rgb(35, 1, 45);
+}
+
+.dropdown li a {
+  text-align: center;
+  background: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dropdown li button {
+  color: white;
+  border: none;
+  background: transparent;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.dropdown li a:hover,
+.dropdown button:hover {
+  color: rgb(89, 219, 219);
+}
