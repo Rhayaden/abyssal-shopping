@@ -1,0 +1,148 @@
+.desktop-header {
+  display: none;
+}
+
+.mobile-header {
+  width: 100%;
+  height: 3.5rem;
+  background-color: rgb(35, 1, 45);
+  -webkit-box-shadow: 0 3px 5px rgba(35, 1, 45, 0.75);
+  box-shadow: 0 3px 5px rgba(35, 1, 45, 0.75);
+  position: fixed;
+  top: 0;
+  z-index: 4;
+}
+.mobile-nav {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.mobile-header h1 {
+  position: relative;
+  color: rgb(89, 219, 219);
+  font-family: "Pacifico";
+  font-size: 1.75rem;
+}
+
+.mobile-header ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.mobile-header a {
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-header nav button {
+  color: white;
+  background: transparent;
+  border: none;
+}
+.mobile-header a:hover,
+.mobile-header a.active,
+.auth:hover {
+  color: rgb(89, 219, 219);
+}
+
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-header {
+    display: block;
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(35, 1, 45);
+    padding: 0 1.5rem;
+    -webkit-box-shadow: 0 5px 5px rgba(35, 1, 45, 0.25);
+    box-shadow: 0 5px 5px rgba(35, 1, 45, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 4;
+  }
+
+  .desktop-nav {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .desktop-header h1 {
+    color: rgb(89, 219, 219);
+    font-family: "Pacifico";
+    font-size: 1.75rem;
+  }
+
+  .desktop-header ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .desktop-header li {
+    margin: 0 1rem;
+  }
+
+  .desktop-header a {
+    color: white;
+    text-decoration: none;
+  }
+  .auth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid rgb(69, 169, 169);
+    border-radius: 120px;
+    color: white;
+  }
+  .desktop-header a:hover,
+  .desktop-header a.active,
+  .auth:hover {
+    color: rgb(89, 219, 219);
+  }
+
+  .desktop-header a.active {
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid rgb(69, 169, 169);
+  }
+}

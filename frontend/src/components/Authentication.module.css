@@ -1,0 +1,63 @@
+.form-control {
+  color: rgb(85, 1, 125);
+  font-family: "Roboto";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: -o-linear-gradient(rgb(89, 219, 219), 66%, rgb(85, 1, 125));
+  background: linear-gradient(rgb(89, 219, 219), 66%, rgb(85, 1, 125));
+  position: absolute;
+  height: 94vh;
+  width: 100%;
+}
+.form-control h1 {
+  margin-top: 8rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(225, 225, 225);
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.form-control h2 {
+  margin: 1rem;
+}
+.form-control p {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.form-control a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.form-control a:hover {
+  text-decoration: underline;
+}
+.error {
+  list-style: none;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgb(255, 125, 125);
+  border-radius: 6px;
+}
+
+@media (max-width: 40rem) {
+  .form-control {
+    height: 100vh;
+  }
+}
