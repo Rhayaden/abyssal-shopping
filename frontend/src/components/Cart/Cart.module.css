@@ -1,0 +1,229 @@
+.no-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgb(35, 1, 45);
+  margin: 5rem 5rem;
+  text-align: center;
+}
+
+.total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  max-height: 75vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.items ul {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  -ms-grid-rows: (20%) [auto];
+  grid-template-rows: repeat(auto, 20%);
+}
+
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.075);
+  padding: 1rem;
+}
+
+.btn {
+  color: rgb(35, 1, 45);
+  background-color: white;
+  padding: 0.5rem 0.5rem;
+  font-size: 24px;
+  border: 2px solid rgb(158, 0, 220);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: white;
+  background: rgb(158, 0, 220);
+}
+
+.disabled {
+  background: -o-linear-gradient(rgb(188, 100, 220), rgb(105, 1, 145));
+  background: linear-gradient(rgb(188, 100, 220), rgb(105, 1, 145));
+  color: rgb(160, 160, 160);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.wrapper {
+  font-size: 2rem;
+}
+
+.wrapper p {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.wrapper i {
+  background: white;
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.success,
+.failed {
+  margin: 1rem;
+  color: rgb(0, 225, 0);
+}
+
+.failed {
+  color: rgb(225, 0, 0);
+}
+
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.actions button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 3rem;
+  margin: 1rem 0.5rem 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid rgb(89, 219, 219);
+  background: transparent;
+  color: white;
+  border-radius: 12px;
+}
+
+.actions button:hover {
+  color: white;
+  background: rgb(89, 219, 219);
+  color: rgb(85, 1, 200);
+}
+
+@media (min-width: 768px) {
+  .no-product {
+    margin: 10rem 5rem;
+  }
+  .total {
+    margin-top: 5rem;
+  }
+  .items {
+    width: 100%;
+    max-height: 72.5vh;
+  }
+  .order {
+    width: 90%;
+  }
+  .btn {
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    background: rgb(158, 0, 220);
+  }
+  .wrapper p {
+    font-size: 1.5rem;
+  }
+  .actions button {
+    margin: 1rem 1rem 0 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .total {
+    margin: 1rem;
+  }
+  .items {
+    width: 60%;
+  }
+  .btn {
+    color: rgb(35, 1, 45);
+    background: transparent;
+  }
+}

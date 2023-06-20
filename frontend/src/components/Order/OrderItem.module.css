@@ -1,0 +1,140 @@
+.orders {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  font-size: 0.74rem;
+}
+
+.orders h1 {
+  text-align: center;
+}
+
+.orders h2 {
+  text-align: center;
+  width: 60%;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+.orders a {
+  text-decoration: none;
+}
+
+.orders ul {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.orders ul li {
+  list-style: none;
+  font-size: 18px;
+}
+
+.orders span {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .orders {
+    width: 100%;
+    margin-top: 4rem;
+  }
+  .orders h1 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  .orders {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    list-style: none;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  .orders h2 {
+    text-align: center;
+    width: 60%;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(225, 225, 225);
+  }
+  .orders a {
+    text-decoration: none;
+  }
+
+  .orders ul {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .orders ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .orders span {
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1200px) {
+  .orders {
+    width: 80%;
+    margin-top: 0.25rem;
+    font-size: inherit;
+  }
+}
