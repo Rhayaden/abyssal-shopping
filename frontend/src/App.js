@@ -16,9 +16,9 @@ const EditProductpage = lazy(() => import("./pages/EditProductpage"));
 const Cartpage = lazy(() => import("./pages/Cartpage"));
 const OrdersPage = lazy(() => import("./pages/Orderspage"));
 const Profile = lazy(() => import("./pages/Profile"));
-const ResetPass = lazy(() => import("./components/Profile/ResetPass"));
+const ResetPass = lazy(() => import("./components/ResetPass"));
 const InvoicesPage = lazy(() => import("./pages/InvoicesPage"));
-const Invoice = lazy(() => import("./components/Profile/Invoice"));
+const Invoice = lazy(() => import("./components/Invoice"));
 
 const router = createBrowserRouter([
   {
@@ -102,7 +102,7 @@ const router = createBrowserRouter([
               </ProtectedRoute>
             ),
             action: (meta) =>
-              import("./components/Product/ProductForm").then((module) =>
+              import("./components/ProductForm").then((module) =>
                 module.action(meta)
               ),
           },
@@ -116,7 +116,7 @@ const router = createBrowserRouter([
               </ProtectedRoute>
             ),
             action: (meta) =>
-              import("./components/Product/ProductForm").then((module) =>
+              import("./components/ProductForm").then((module) =>
                 module.action(meta)
               ),
           },

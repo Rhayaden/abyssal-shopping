@@ -1,0 +1,92 @@
+.form {
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.reset-form {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: -o-linear-gradient(rgb(89, 219, 219), 66%, rgb(85, 1, 125));
+  background: linear-gradient(rgb(89, 219, 219), 66%, rgb(85, 1, 125));
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form label,
+.form input {
+  margin-bottom: 0.5rem;
+}
+
+.form label {
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+}
+
+.resetForm input {
+  width: 15%;
+}
+.reset-form label {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.form input {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid rgb(225, 225, 225);
+  font: inherit;
+  border-radius: 3px;
+}
+
+.form input:focus {
+  outline-color: rgb(158, 0, 220);
+}
+
+.form button {
+  background: -o-linear-gradient(rgb(158, 0, 220), rgb(35, 1, 45));
+  background: linear-gradient(rgb(158, 0, 220), rgb(35, 1, 45));
+  color: white;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.form button:hover {
+  background: rgb(158, 2, 220);
+}
+
+@media (min-width: 768px) {
+  .form {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,64 @@
+.auth-form label,
+.auth-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.auth-form input {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  font: inherit;
+  border-radius: 3px;
+}
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+.checkbox input {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.auth-form input:focus {
+  outline-color: rgb(158, 0, 220);
+}
+
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.btn {
+  background: -o-linear-gradient(rgb(158, 0, 220), rgb(35, 1, 45));
+  background: linear-gradient(rgb(158, 0, 220), rgb(35, 1, 45));
+  color: white;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgb(158, 2, 220);
+}
+
+.btn[disabled] {
+  background: -o-linear-gradient(rgb(188, 100, 220), rgb(105, 1, 145));
+  background: linear-gradient(rgb(188, 100, 220), rgb(105, 1, 145));
+  color: rgb(160, 160, 160);
+  cursor: default;
+}
