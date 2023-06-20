@@ -1,0 +1,44 @@
+.button-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  position: relative;
+  top: 11.25rem;
+}
+
+.button-control button,
+.button-control a {
+  max-height: 2rem;
+  min-height: 2rem;
+  max-width: 7rem;
+  margin: 0.25rem 0.25rem;
+  padding: 0.25rem 0.25rem;
+  font-size: 16px;
+  color: rgb(35, 1, 45);
+  border: none;
+  background: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.detail-action-button {
+  border: 1px solid rgb(158, 0, 220);
+}
+
+.button-control button:hover,
+.button-control a:hover {
+  color: white;
+  background: rgb(158, 0, 220);
+}
+
+.button-control button.disabled {
+  color: rgb(160, 160, 160);
+  cursor: default;
+}

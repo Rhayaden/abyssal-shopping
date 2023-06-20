@@ -1,0 +1,106 @@
+.welcome-user {
+  -ms-grid-column-span: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  grid-area: welcome;
+  font-size: 1.5rem;
+  font-family: "Roboto";
+}
+.welcome-user span {
+  color: rgb(89, 219, 219);
+  font-family: "Pacifico";
+  font-size: 1.2em;
+}
+
+.nav-items {
+  width: 100vw;
+  height: 100vh;
+  background: -o-linear-gradient(rgb(35, 1, 45), 67%, rgb(85, 1, 125));
+  background: linear-gradient(rgb(35, 1, 45), 67%, rgb(85, 1, 125));
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  padding: 5rem 1rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  -ms-grid-rows: 10% 90%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "welcome welcome"
+    "navItems dropdown";
+}
+
+.nav-items ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.nav-items li {
+  margin: 1rem 1rem;
+  font-size: 1.25rem;
+  padding-top: 2rem;
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-items li button {
+  border: none;
+  background: transparent;
+  font-size: inherit;
+  color: white;
+}
+
+.nav-items div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.nav-items a.active {
+  color: rgb(89, 219, 219);
+}
+
+@media (min-width: 768px) {
+  .welcome-user {
+    font-size: 1.6rem;
+  }
+  .welcome-user span {
+    font-size: 1.25em;
+  }
+  .nav-items li {
+    font-size: 1.5rem;
+  }
+}
